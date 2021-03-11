@@ -1,0 +1,41 @@
+body {
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.switch {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 44px;
+    background: #c6c6c6;
+    border-radius: 40px;
+    border: 1px solid gray;
+    outline: none;
+    position: relative;
+    transition: 200ms;
+}
+
+.switch:checked {
+    background: lightgreen;
+    border: 1px solid lightgreen;
+    transition: 200ms;
+}
+
+.switch:before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.switch:checked:before {
+    left: 36px;
+}
